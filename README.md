@@ -292,23 +292,7 @@ Some of the tools may be specifically designed for red teaming, while others are
 Red Team Tips
 ====================
 
-*Learn from Red Teamers with a collection of Red Teaming Tips. These tips cover a range of tactics, tools, and methodologies to improve your red teaming abilities.*
-
-### [🔙](#tool-list)Improved HTML smuggling with mouse move eventlistener
-
-**Description:** *'Qakbot added an EventListener for mouse movement to the HTML smuggling attachment for anti evasion in sandbox's the zip wont drop.'*
-
-**Credit:** [@pr0xylife](https://x.com/pr0xylife)
-
-**Link:** [Twitter](https://x.com/pr0xylife/status/1598410732516802563)
-
-### [🔙](#tool-list)Google translate for phishing
-
-**Description:** *Successful phishing page credential stealing being proxied via the google translate page view functionality.*
-
-**Credit:** [@malmoeb](https://x.com/malmoeb)
-
-**Link:** [Twitter](https://x.com/malmoeb/status/1671106885590630400)
+ 
 
 ### [🔙](#tool-list)Hiding the local admin account
 
@@ -676,7 +660,7 @@ domain=DOMAIN_COM;rand=$RANDOM;curl -fsSL "https://crt.sh/?q=${domain}" | pup 't
 
 A JavaScript bookmarklet for extracting all webpage endpoint links on a page.
 
-Created by [@renniepak](https://twitter.com/renniepak), this JavaScript code snippet can be used to extract all endpoints (starting with /) from the current webpage DOM including all external script sources embedded on the webpage.
+ 
 
 ```javascript
 javascript:(function(){var scripts=document.getElementsByTagName("script"),regex=/(?<=(\"|\'|\`))\/[a-zA-Z0-9_?&=\/\-\#\.]*(?=(\"|\'|\`))/g;const results=new Set;for(var i=0;i<scripts.length;i++){var t=scripts[i].src;""!=t&&fetch(t).then(function(t){return t.text()}).then(function(t){var e=t.matchAll(regex);for(let r of e)results.add(r[0])}).catch(function(t){console.log("An error occurred: ",t)})}var pageContent=document.documentElement.outerHTML,matches=pageContent.matchAll(regex);for(const match of matches)results.add(match[0]);function writeResults(){results.forEach(function(t){document.write(t+"<br>")})}setTimeout(writeResults,3e3);})();
