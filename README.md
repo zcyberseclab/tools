@@ -1,19 +1,7 @@
 
-# RedTeam-Tools
-This github repository contains a collection of **150+** **tools** and **resources** that can be useful for **red teaming activities**. 
-
-Some of the tools may be specifically designed for red teaming, while others are more general-purpose and can be adapted for use in a red teaming context.
-
- 
 > **Warning** 
 > 
 > *The materials in this repository are for informational and educational purposes only. They are not intended for use in any illegal activities.*
-
-> **Note** 
-> 
-> *Hide Tool List headings with the arrow.*
-> 
-> *Click 🔙 to get back to the list.*
 
 # Tool List
 
